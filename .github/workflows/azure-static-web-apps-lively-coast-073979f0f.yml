@@ -36,6 +36,17 @@ jobs:
       - name: List Directory Contents
         run: ls -R
         working-directory: ./
+      - name: Check Permissions Src
+        run: ls -l src
+        working-directory: ./
+      - name: Check Permissions build
+        run: ls -l src/build
+        working-directory: ./
+      - name: Serve Build
+        run: |
+          npm install -g serve
+          serve -s src/build
+        working-directory: ./
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
