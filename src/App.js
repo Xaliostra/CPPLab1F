@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const backendUrl = "https://my-food-recognizer-backend.azurewebsites.net";
+const backendUrl = "https://CPPLab1.azurewebsites.net";
 
 function App() {
   const [image, setImage] = useState(null);
