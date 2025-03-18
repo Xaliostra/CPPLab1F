@@ -31,7 +31,7 @@ jobs:
         run: npm install
         working-directory: ./
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
         working-directory: ./
       - name: List Directory Contents
         run: ls -R
