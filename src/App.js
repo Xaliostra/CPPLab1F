@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const backendUrl = "cpplab1-cuffdsfpdzhsdufy.uksouth-01.azurewebsites.net";  // Укажите URL вашего бэкенда в Azure
+const backendUrl = "https://cpplab1-cuffdsfpdzhsdufy.uksouth-01.azurewebsites.net";  // Укажите URL вашего бэкенда в Azure
 
 function App() {
   const [image, setImage] = useState(null);
